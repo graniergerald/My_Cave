@@ -34,6 +34,7 @@ h6 {
 
 a {
   color: var(--secondary-color);
+  cursor: pointer;
 }
 
 input[type="submit"] {
@@ -72,6 +73,16 @@ textarea {
   outline-style: none;
 }
 
+form p label {
+  margin-bottom: 7px;
+}
+
+input[type="file"] {
+  border: solid 2px;
+  border-radius: 15px;
+  background-color: var(--bckg-color);
+}
+
 /********CSS PRECIS ********/
 /**************************/
 
@@ -81,6 +92,7 @@ header {
   margin-top: 30px;
   display: flex;
   justify-content: space-around;
+  margin-bottom: 70px;
 }
 
 .Menu {
@@ -91,12 +103,6 @@ header ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-}
-
-header li {
-  border-bottom: 3px black solid;
-  transition: all 0.3s ease-in-out;
-  padding-bottom: 2px;
 }
 
 /*****CONTAINER + CARDS READ****/
@@ -165,13 +171,6 @@ textarea {
 
 /*****Select for Update Delete*****/
 
-.SelectSelectBook {
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-  text-align: center;
-}
-
 .UpdateDeleteBottle {
   display: flex;
   flex-direction: column;
@@ -181,6 +180,7 @@ textarea {
   width: 500px;
   background-color: var(--lightSecond-color);
   border-radius: 20px;
+  margin: 20px;
 }
 
 #BottleSelect {

@@ -3,9 +3,9 @@
 
     <div class ="Menu">
     <ul>
-        <li>Accueil</li>
-        <li>Catalogue de Vin</li>
-        <li>Modifier le catalogue</li>
+        <li><a href="Accueil.php">Accueil</a></li>
+        <li><a href="Catalogue.php">Catalogue de Vin</a></li>
+        <li><a href="ModifCatalogue.php">Modifier le catalogue</a></li>
     </ul>
     </div>
 

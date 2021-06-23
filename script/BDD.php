@@ -25,6 +25,11 @@ function Connexion(&$conn) {
     }
 };
 
+
+//////////////////////  BOTTLE   ////////////////////////////
+///////////////////////////////////////////////////////////
+
+
 function createBottleBDD($CreateNameBottle, $CreateYearBottle, $CreateGrapesBottle, $CreateCountryBottle, $CreateRegionBottle, $CreateDescriptionBottle, $CreatePictureBottle)
 {
     $dbco;
@@ -157,6 +162,60 @@ function deleteBottleBDD($UpdateIdBottleClean)
         echo "Erreur :" .$e->getMessage();
 
     }
+};
+
+//////////////////////  USER   ////////////////////////////
+///////////////////////////////////////////////////////////
+
+function createUserBDD($CreatePseudoUser, $CreatePasswordUser, $CreateEmailUser)
+{
+    $dbco;
+    
+    Connexion($dbco);
+
+    try {
+
+    //on prépare la requête 
+    $req = $dbco->prepare("INSERT INTO users(pseudo, email, password) 
+    VALUES(:pseudo, :email, :password)");
+
+    $req->bindValue(':pseudo', $CreatePseudoUser);
+    $req->bindValue(':email', $CreatePasswordUser);
+    $req->bindValue(':password', $CreateEmailUser);
+    $req->execute();
+
+    
+    }
+    catch (PDOException $e){
+        echo "Erreur :" .$e->getMessage();
+
+    }
+}
+
+function SelectUserBDD(string $EmailUser){
+
+    $dbco;
+    
+        Connexion($dbco);
+
+        try {
+
+            //on prépare la requête 
+            $req = $dbco->prepare("SELECT * FROM users WHERE email=:email");
+            $req->bindValue(':email', $$EmailUser, PDO::PARAM_STR);
+            $req->execute();
+
+            $SelectUser = $req->fetch(PDO::FETCH_ASSOC);
+
+            return $SelectUser;
+
+    
+        }
+        catch (PDOException $e){
+            echo "Erreur :" .$e->getMessage();
+    
+        }
+
 };
 
 

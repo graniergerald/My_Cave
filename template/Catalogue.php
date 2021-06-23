@@ -4,6 +4,8 @@
 
 <?php include 'includeContent/Header.php'; ?>
 
+<?php include 'includeContent/CardReadBottle.php'; ?>
+
     
 <?php include 'includeContent/Footer.php'; ?>
 </body>

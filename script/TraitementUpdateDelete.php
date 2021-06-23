@@ -23,7 +23,7 @@ if (isset($_POST['InputMAJ'])) {
 
         echo "<script>";
         echo "alert('La bouteille de vin a bien été mis à jour dans le catalogue');";
-        echo "location.href='../template/Accueil.php'"; //#InsertBottle en fin de ref pour le scroll sur l'id.
+        echo "location.href='../template/Accueil.php'";
         echo "</script>";
     }
     
@@ -41,7 +41,7 @@ if (isset($_POST['InputDELETE'])) {
 
         echo "<script>";
         echo "alert('La bouteille de vin a bien été supprimé du catalogue');";
-        echo "location.href='../template/Accueil.php'"; //#InsertBottle en fin de ref pour le scroll sur l'id.
+        echo "location.href='../template/Accueil.php'";
         echo "</script>";
     }
 

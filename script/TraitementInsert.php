@@ -1,6 +1,7 @@
 <?php
 
 require "BDD.php";
+require "InputFile.php";
 
 
 if(isset($_POST['CreateNameBottle']) && isset($_POST['CreateYearBottle']) && isset($_POST['CreateGrapesBottle']) && isset($_POST['CreateCountryBottle']) && isset($_POST['CreateRegionBottle']) && isset($_POST['CreateDescriptionBottle']) && isset($_POST['CreatePictureBottle']) && !empty($_POST['CreateNameBottle']) && !empty($_POST['CreateYearBottle']) && !empty($_POST['CreateGrapesBottle']) && !empty($_POST['CreateCountryBottle']) && !empty($_POST['CreateRegionBottle']) && !empty($_POST['CreateDescriptionBottle']) && !empty($_POST['CreatePictureBottle'])) {
@@ -15,12 +16,15 @@ if(isset($_POST['CreateNameBottle']) && isset($_POST['CreateYearBottle']) && iss
             $CreateDescriptionBottleClean = filter_var(($_POST['CreateDescriptionBottle']), FILTER_SANITIZE_SPECIAL_CHARS);
             $CreatePictureBottleClean = filter_var(($_POST['CreatePictureBottle']), FILTER_SANITIZE_SPECIAL_CHARS);
 
+            // checkPicture();
+
+        
             
             createBottleBDD($CreateNameBottleClean, $CreateYearBottleClean, $CreateGrapesBottleClean, $CreateCountryBottleClean, $CreateRegionBottleClean, $CreateDescriptionBottleClean, $CreatePictureBottleClean);
 
             echo "<script>";
             echo "alert('La bouteille de vin a bien été rajouté dans le catalogue');";
-            echo "location.href='../template/Accueil.php'"; //#InsertBottle en fin de ref pour le scroll sur l'id.
+            //echo "location.href='../template/Accueil.php'";   ENLEVER PDT DEBUGAGE.
             echo "</script>";
         
 

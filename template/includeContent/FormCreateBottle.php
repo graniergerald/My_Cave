@@ -32,7 +32,7 @@
 
                 <p>
                     <label for="CreatePictureBottle">Image</label>
-                    <input type="text" name="CreatePictureBottle" id="CreatePictureBottle" maxlength="20" size="20" required>
+                    <input type="file" name="CreatePictureBottle" id="CreatePictureBottle" maxlength="20" size="20" required>
                 </p>
 
                 <input type="submit" value="Enregistrer">
