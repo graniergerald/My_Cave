@@ -208,3 +208,27 @@ footer {
   margin-top: 75px;
   border-top: black 1px solid;
 }
+
+/********Form User********/
+
+.ConnexionUser,
+.InscriptionUser {
+  width: 375px;
+  background-color: var(--lightSecond-color);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ConnexionUser input[type="submit"],
+.InscriptionUser input[type="submit"] {
+  width: 200px;
+  align-self: center;
+}
+
+.ConnexionUser h2,
+.InscriptionUser h2 {
+  text-align: center;
+}

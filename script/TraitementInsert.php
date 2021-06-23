@@ -24,7 +24,7 @@ if(isset($_POST['CreateNameBottle']) && isset($_POST['CreateYearBottle']) && iss
 
             echo "<script>";
             echo "alert('La bouteille de vin a bien été rajouté dans le catalogue');";
-            //echo "location.href='../template/Accueil.php'";   ENLEVER PDT DEBUGAGE.
+            //echo "location.href='../template/ModifCatalogue.php'";   ENLEVER PDT DEBUGAGE.
             echo "</script>";
         
 

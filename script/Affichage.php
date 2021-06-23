@@ -164,7 +164,7 @@ function FormUpdateDeleteBottle() {
                             echo '
                             <p>
                             <label for="UpdatePictureBottle">Image</label>
-                            <input type="file" name="UpdatePictureBottle" id="UpdatePictureBottle" maxlength="250" size="30" value="" required>
+                            <input type="file" name="UpdatePictureBottle" id="UpdatePictureBottle" maxlength="250" size="30" value="">
                             </p>';
                             break;
                     }
