@@ -3,9 +3,9 @@
 function Connexion(&$conn) {
     
     $servername= 'localhost';
-    $bdname= 'my_cave';
-    $username= 'root';
-    $password='root';
+    $bdname= 'id16434997_my_cave';
+    $username= 'id16434997_root';
+    $password='TRboulot=1409';
     //on try de se connecter
     try {
         
