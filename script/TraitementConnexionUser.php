@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 require 'BDD.php';
 
@@ -20,7 +21,6 @@ if(isset($_POST['SelectUserNickname']) && isset($_POST['SelectUserEmail']) && is
             echo "location.href='../template/ModifCatalogue.php'";
             echo "</script>";
 
-            session_start();
             $_SESSION['NickNameUser'] = $_POST['SelectUserNickname'];
         }
 
