@@ -47,7 +47,7 @@ function ReadCardBottles($NomArray){
 function selectBottleForm ($NomArray) {
     
     echo '<form class ="SelectSelectBottle" method="GET" action="">
-            <label for="BottleSelect"><h2>Selectionner un livre à modifier:</h2></label>
+            <label for="BottleSelect"><h2>Selectionner une bouteille à modifier:</h2></label>
             <select name="BottleSelect" id="BottleSelect">
             <option value="0">Please choose a bottle to update</option>';
 
@@ -67,7 +67,7 @@ function selectBottleForm ($NomArray) {
     }
 
 
-    echo    '<input type="submit" id="SelectBook" value="Selectionner ce livre">
+    echo    '<input type="submit" id="SelectBook" value="Selectionner une bouteille">
              </select>
         </form>';
 
@@ -95,7 +95,7 @@ function FormUpdateDeleteBottle() {
         
         $bottle = readBottlesIDBDD($id);
         
-        echo '<form class="InsertBottle" method="post" action="../script/TraitementUpdateDelete.php"> <legend> <h2>Mettre à jour / Supprimer une bouteille de vin :</h2></legend>';
+        echo '<form class="InsertBottle" method="post" enctype ="multipart/form-data" action="../script/TraitementUpdateDelete.php"> <legend> <h2>Mettre à jour / Supprimer une bouteille de vin :</h2></legend>';
         //on affiche le tableaux selectioné en fonction de ce qui est sélectionné ( id )
         foreach($bottle as $key=>$value) {
 

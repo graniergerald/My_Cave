@@ -202,7 +202,7 @@ function SelectUserBDD(string $EmailUser){
 
             //on prépare la requête 
             $req = $dbco->prepare("SELECT * FROM users WHERE email=:email");
-            $req->bindValue(':email', $$EmailUser, PDO::PARAM_STR);
+            $req->bindValue(':email', $EmailUser, PDO::PARAM_STR);
             $req->execute();
 
             $SelectUser = $req->fetch(PDO::FETCH_ASSOC);

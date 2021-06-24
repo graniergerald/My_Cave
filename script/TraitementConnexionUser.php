@@ -9,13 +9,16 @@ if(isset($_POST['SelectUserNickname']) && isset($_POST['SelectUserEmail']) && is
         $SelectUserEmailClean = filter_var(($_POST['SelectUserEmail']), FILTER_SANITIZE_SPECIAL_CHARS);
         $SelectUserPasswordClean = filter_var(($_POST['SelectUserPassword']), FILTER_SANITIZE_SPECIAL_CHARS);
 
-        SelectUserBDD($SelectUserEmailClean);
-
-        // travailler la sorti de donnée du tableaux user selectionné
+        $PasswordUserBDD = SelectUserBDD($SelectUserEmailClean);
+        
 
         //comparer mdp taper et hash.
-        if("miaou" == "miaou") {
-            echo "miaou";//si c'est bon
+        if(password_verify($SelectUserPasswordClean, $PasswordUserBDD['password']))
+        {
+            echo "<script>";
+            echo "alert('Connexion Reussi');";
+            echo "location.href='../template/ModifCatalogue.php'";
+            echo "</script>";
         }
 
         else {
@@ -24,13 +27,5 @@ if(isset($_POST['SelectUserNickname']) && isset($_POST['SelectUserEmail']) && is
             echo "location.href='../template/ModifCatalogue.php'";
             echo "</script>"; 
         }}
-    
-    else {
-
-        echo "<script>";
-        echo "alert('Il manque des informations');";
-        echo "location.href='../template/ModifCatalogue.php'";
-        echo "</script>";
-    }
 
 ?>

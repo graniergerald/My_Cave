@@ -1,11 +1,12 @@
 <?php
 
 require "BDD.php";
+require "InputFileUpdate.php";
 
 if (isset($_POST['InputMAJ'])) {
 
 
-    if(isset($_POST['UpdateIdBottle']) && isset($_POST['UpdateNameBottle']) && isset($_POST['UpdateYearBottle']) && isset($_POST['UpdateGrapesBottle']) && isset($_POST['UpdateCountryBottle']) && isset($_POST['UpdateRegionBottle']) && isset($_POST['UpdateDescriptionBottle']) && isset($_POST['UpdatePictureBottle']) && !empty($_POST['UpdateIdBottle']) && !empty($_POST['UpdateNameBottle']) && !empty($_POST['UpdateYearBottle']) && !empty($_POST['UpdateGrapesBottle']) && !empty($_POST['UpdateCountryBottle']) && !empty($_POST['UpdateRegionBottle']) && !empty($_POST['UpdateDescriptionBottle']) && !empty($_POST['UpdatePictureBottle'])) {
+    if(isset($_POST['UpdateIdBottle']) && isset($_POST['UpdateNameBottle']) && isset($_POST['UpdateYearBottle']) && isset($_POST['UpdateGrapesBottle']) && isset($_POST['UpdateCountryBottle']) && isset($_POST['UpdateRegionBottle']) && isset($_POST['UpdateDescriptionBottle']) && isset($_FILES['UpdatePictureBottle']) && !empty($_POST['UpdateIdBottle']) && !empty($_POST['UpdateNameBottle']) && !empty($_POST['UpdateYearBottle']) && !empty($_POST['UpdateGrapesBottle']) && !empty($_POST['UpdateCountryBottle']) && !empty($_POST['UpdateRegionBottle']) && !empty($_POST['UpdateDescriptionBottle']) && !empty($_FILES['UpdatePictureBottle'])) {
 
 
             
@@ -16,14 +17,15 @@ if (isset($_POST['InputMAJ'])) {
         $UpdateCountryBottleClean = filter_var(($_POST['UpdateCountryBottle']), FILTER_SANITIZE_SPECIAL_CHARS);
         $UpdateRegionBottleClean = filter_var(($_POST['UpdateRegionBottle']), FILTER_SANITIZE_SPECIAL_CHARS);
         $UpdateDescriptionBottleClean = filter_var(($_POST['UpdateDescriptionBottle']), FILTER_SANITIZE_SPECIAL_CHARS);
-        $UpdatePictureBottleClean = filter_var(($_POST['UpdatePictureBottle']), FILTER_SANITIZE_SPECIAL_CHARS);
+        $UpdatePictureBottleClean = filter_var(($_FILES['UpdatePictureBottle']), FILTER_SANITIZE_SPECIAL_CHARS);
 
-        
-        updateBottleBDD($UpdateIdBottleClean, $UpdateNameBottleClean, $UpdateYearBottleClean, $UpdateGrapesBottleClean, $UpdateCountryBottleClean, $UpdateRegionBottleClean, $UpdateDescriptionBottleClean, $UpdatePictureBottleClean);
+        checkPictureUpdate();
+
+        updateBottleBDD($UpdateIdBottleClean, $UpdateNameBottleClean, $UpdateYearBottleClean, $UpdateGrapesBottleClean, $UpdateCountryBottleClean, $UpdateRegionBottleClean, $UpdateDescriptionBottleClean, $PictureUpdate);
 
         echo "<script>";
         echo "alert('La bouteille de vin a bien été mis à jour dans le catalogue');";
-        echo "location.href='../template/ModifCatalogue.php'";
+        //echo "location.href='../template/ModifCatalogue.php'";
         echo "</script>";
     }
     
@@ -31,7 +33,7 @@ if (isset($_POST['InputMAJ'])) {
 
     echo "<script>";
         echo "alert('Il manque des informations');";
-        echo "location.href='../template/ModifCatalogue.php'";
+        //echo "location.href='../template/ModifCatalogue.php'";
         echo "</script>";
 };
 }

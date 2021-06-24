@@ -1,10 +1,15 @@
 <?php
 
-    function checkPicture()
+
+    //////////////InsertFile/////////////////
+    /////////////////////////////////////////
+
+
+    function checkPictureInsert()
     {
 
         
-        $maxSize = 50000;
+        $maxSize = 50000000; 
         $validExt = array('.jpg', '.jpeg', '.gif', '.png');
         
         if($_FILES['CreatePictureBottle']['error'] > 0)
@@ -38,42 +43,19 @@
         
         $tmpName = $_FILES['CreatePictureBottle']['tmp_name'];
         $uniqueName = uniqid() . '_' . $_FILES['CreatePictureBottle']['name'];
-        $fileName = "../img/" . $uniqueName . $fileExt;
-        $resultat = move_uploaded_file($tmpName, $fileName);
-        $fileBDD = $uniqueName . $fileExt;
-        
-        if($resultat)
-        
-        {
-            echo "<script>";
-            echo "alert('Tu es un winneur !');";
-            echo "location.href='../template/Accueil.php'";
-            echo "</script>";
-        }
+        $fileName = "../img/" . $uniqueName;
+        $resultat = move_uploaded_file($_FILES['CreatePictureBottle']['tmp_name'], $fileName);
 
-        echo 'voici $fileBDD';
-        var_dump($fileBDD);
-        echo '</br>';
-
-        echo 'voici $resultat';
-        var_dump($resultat);
-        echo '</br>';
-
-        echo 'voici $fileName';
-        var_dump($fileName);
-        echo '</br>';
-
-        echo 'voici $uniqueName';
-        var_dump($uniqueName);
-        echo '</br>';
-
-        echo 'voici $files tableau';
-        var_dump($_FILES['CreatePictureBottle']);
-        echo '</br>';
-
-        return $fileBDD;
+        return $uniqueName;
     }
         
-        
+        $PictureInsert = checkPictureInsert();
+
+
+
+
+
+
+
         
 ?>

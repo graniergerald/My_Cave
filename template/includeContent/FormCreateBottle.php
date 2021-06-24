@@ -1,4 +1,4 @@
-            <form class="InsertBottle" id="InsertBottle" method="post" action="../script/TraitementInsert.php">
+            <form class="InsertBottle" id="InsertBottle" method="post" enctype ="multipart/form-data" action="../script/TraitementInsert.php">
                 <legend> <h2>Rajouter une bouteille de vin :</h2></legend>
                 <p>
                     <label for="CreateNameBottle">Nom du vin</label>

@@ -131,8 +131,11 @@ header ul {
 }
 
 .img-card {
-  height: 300px;
+  height: auto;
   width: auto;
+
+  max-height: 300px;
+  max-width: 300px;
 }
 
 /********FORMULAIRE********/
