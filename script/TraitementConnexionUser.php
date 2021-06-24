@@ -19,6 +19,9 @@ if(isset($_POST['SelectUserNickname']) && isset($_POST['SelectUserEmail']) && is
             echo "alert('Connexion Reussi');";
             echo "location.href='../template/ModifCatalogue.php'";
             echo "</script>";
+
+            session_start();
+            $_SESSION['NickNameUser'] = $_POST['SelectUserNickname'];
         }
 
         else {

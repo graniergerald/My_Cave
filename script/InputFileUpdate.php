@@ -11,7 +11,7 @@ function checkPictureUpdate()
         $maxSize = 50000000; 
         $validExt = array('.jpg', '.jpeg', '.gif', '.png');
         
-        if($_FILES['UpdatePictureBottle']['error'] > 0)
+        if($_FILES['UpdatePictureBottle']['error'] > 0 && $_FILES['UpdatePictureBottle']['error'] !== 4 )
         {
             echo "<script>";
             echo "alert('Une erreur est survenu lors du téléchargement');";

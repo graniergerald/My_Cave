@@ -25,7 +25,7 @@ if (isset($_POST['InputMAJ'])) {
 
         echo "<script>";
         echo "alert('La bouteille de vin a bien été mis à jour dans le catalogue');";
-        //echo "location.href='../template/ModifCatalogue.php'";
+        echo "location.href='../template/Catalogue.php'";
         echo "</script>";
     }
     
@@ -33,7 +33,7 @@ if (isset($_POST['InputMAJ'])) {
 
     echo "<script>";
         echo "alert('Il manque des informations');";
-        //echo "location.href='../template/ModifCatalogue.php'";
+        echo "location.href='../template/ModifCatalogue.php'";
         echo "</script>";
 };
 }
@@ -55,7 +55,7 @@ if (isset($_POST['InputDELETE'])) {
 
         echo "<script>";
         echo "alert('Erreur Suppression du livre');";
-        echo "location.href='../template/Catalogue.php'";
+        echo "location.href='../template/ModifCatalogue.php'";
         echo "</script>";
 }};
 

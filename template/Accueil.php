@@ -5,9 +5,6 @@
 <?php include 'includeContent/Header.php'; ?>
 
 
-<?php include 'includeContent/FormConnexionUser.php'; ?>
-<?php include 'includeContent/FormInscriptionUser.php'; ?>
-
     
 <?php include 'includeContent/Footer.php'; ?>
 </body>
