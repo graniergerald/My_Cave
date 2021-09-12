@@ -36,8 +36,20 @@
 
 <script type="text/javascript" src="https://form.jotform.com/jsform/212538130135344"></script>
 
-<div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=33%20Rue%20Daniel%20Digneaux%20Audenge%2033980&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org">123movies</a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">iframe google maps</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
-    
+<div class="MapVenezNousVoir">
+
+    <div class="map-responsive map">
+        
+        <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=33%20Rue%20Daniel%20Digneaux%20Audenge%2033980&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org">123movies</a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">iframe google maps</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
+            
+        </div>
+        
+        <div class="txtMap">
+            <h3>Venez nous voir</h3>
+            <p><h4>Adresse :</h4>
+                <p><a href="https://www.google.com/maps/place/33+Rue+Daniel+Digneaux,+33980+Audenge/@44.688701,-1.0062289,17z/data=!3m1!4b1!4m5!3m4!1s0xd5496230db93ca5:0x5c4d0608fd6b1d90!8m2!3d44.6886972!4d-1.0040402" target="_blank">33 Rue Daniel Digneaux</br>Audenge 33980</a></p></p>
+        </div>
+</div>
+        
 <?php include 'includeContent/footer.php'; ?>
 </body>
-</html>

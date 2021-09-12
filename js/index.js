@@ -1,3 +1,8 @@
+if (sessionStorage.getItem("FenetreAlcool") === null) {
+  window.alert("L'alcool est dangereux pour la santé, buvez avec modération");
+  sessionStorage.setItem("FenetreAlcool", "ok");
+}
+
 /* Sélection des éléments HTML */
 let link = document.getElementById("link");
 let burger = document.getElementById("burger");

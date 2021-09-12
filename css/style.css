@@ -48,8 +48,14 @@ h6 {
 }
 
 h1 {
-  font-size: 75px;
+  font-size: 65px;
   margin-top: 15px;
+}
+
+@media screen and (max-width: 895px) {
+  h1 {
+    font-size: 55px;
+  }
 }
 
 a {
@@ -469,16 +475,86 @@ textarea {
 .InscriptionUser h2 {
   text-align: center;
 }
+/*******PAGE QUI SOMMES NOUS******/
+
+.imgQuiSommesNous {
+  width: 40%;
+  background-image: url(../img/site_charte/ImgQuiSommesNous.jpg);
+  background-position: center;
+  height: 44em;
+  box-shadow: -200px 0px var(--primary-color);
+  background-repeat: no-repeat;
+}
+
+.QuiSuisJe {
+  background-image: url(../img/site_charte/pexels-lukas-1410138.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+}
+
+.txtQuiSuisJe {
+  width: 600px;
+  background-color: #f4f4f4;
+}
+
+/********PAGE CATALOGUE DE VINS*********/
+
+.imgCatalogue {
+  width: 40%;
+  background-image: url(../img/site_charte/ModifCatalogueImg.jpg);
+  background-position: center;
+  height: 44em;
+  box-shadow: -200px 0px var(--primary-color);
+  background-repeat: no-repeat;
+}
+
+.modifCatalogue {
+  padding-left: var(--GapPageRightLeft);
+  padding-right: var(--GapPageRightLeft);
+}
 
 /********PAGE CONTACT**********/
 
 .imgContact {
   width: 40%;
-  background-image: url(../img/site_charte/PhotoNosVins.jpg);
+  background-image: url(../img/site_charte/ContactImgHeader.jpg);
   background-position: center;
   height: 44em;
   box-shadow: -200px 0px var(--primary-color);
   background-repeat: no-repeat;
+}
+
+.MapVenezNousVoir {
+  padding-right: var(--GapPageRightLeft);
+  padding-left: var(--GapPageRightLeft);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.txtMap {
+  background-color: var(--lightSecond-color);
+  padding: 35px;
+  border-radius: 20px;
+}
+
+.map-responsive {
+  overflow: hidden;
+  position: relative;
+  height: 0;
+  padding-bottom: 10%;
+  min-height: 300px;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 /******footer*****/

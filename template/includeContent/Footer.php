@@ -28,7 +28,7 @@
             </div>
             <div class="textContact horaires">
                 <h4>Horaires :</h4>
-                Horaire : Lundi au Vendredi de 9h à 13h puis de 15h à 19h </br>
+                Lundi au Vendredi de 9h à 13h puis de 15h à 19h </br>
                 Samedi de 9h à 19h sans interruption.
             </div>
         </div>
