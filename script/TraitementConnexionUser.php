@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require 'BDD.php';
+require 'bdd.php';
 
 if(isset($_POST['SelectUserNickname']) && isset($_POST['SelectUserEmail']) && isset($_POST['SelectUserPassword']) && !empty($_POST['SelectUserNickname']) && !empty($_POST['SelectUserEmail']) && !empty($_POST['SelectUserPassword']))
         
@@ -18,7 +18,7 @@ if(isset($_POST['SelectUserNickname']) && isset($_POST['SelectUserEmail']) && is
         {
             echo "<script>";
             echo "alert('Connexion Reussi');";
-            echo "location.href='../template/ModifCatalogue.php'";
+            echo "location.href='../template/modifCatalogue.php'";
             echo "</script>";
 
             $_SESSION['NickNameUser'] = $_POST['SelectUserNickname'];
@@ -27,7 +27,7 @@ if(isset($_POST['SelectUserNickname']) && isset($_POST['SelectUserEmail']) && is
         else {
             echo "<script>";
             echo "alert('Identifiant ou mot de passe incorrect');";
-            echo "location.href='../template/ModifCatalogue.php'";
+            echo "location.href='../template/modifCatalogue.php'";
             echo "</script>"; 
         }}
 

@@ -1,5 +1,5 @@
 <?php
 
-header('Location:template/Accueil.php');
+header('Location:template/accueil.php');
 
 ?>

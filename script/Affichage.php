@@ -62,19 +62,12 @@ function selectBottleForm ($NomArray) {
     elseif ($keyb == "name") {
 
         echo '<option value="'.$idBottle.'">'.$valueb.'</option>';
-    }
-    }
-    }
-
-
-    echo    '<input type="submit" id="SelectBook" value="Selectionner une bouteille">
+    }}}
+    
+        echo    '<input type="submit" id="SelectBook" value="Selectionner une bouteille">
              </select>
         </form>';
 
-        echo "<script>";
-        
-        echo "</script>";
-        //#InsertBottle en fin de ref pour le scroll sur l'id.
 };
 
 
@@ -92,7 +85,6 @@ function FormUpdateDeleteBottle() {
 
         else {
 
-        
         $bottle = readBottlesIDBDD($id);
         
         echo '<form class="InsertBottle" method="post" enctype ="multipart/form-data" action="../script/TraitementUpdateDelete.php"> <legend> <h2>Mettre à jour / Supprimer une bouteille de vin :</h2></legend>';

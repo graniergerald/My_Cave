@@ -16,7 +16,7 @@
         {
             echo "<script>";
             echo "alert('Une erreur est survenu lors du téléchargement');";
-            echo "location.href='../template/Accueil.php'";
+            echo "location.href='../template/accueil.php'";
             echo "</script>";
         }
         
@@ -26,7 +26,7 @@
         {
             echo "<script>";
             echo "alert('Le fichier est trop volumineux');";
-            echo "location.href='../template/Accueil.php'";
+            echo "location.href='../template/accueil.php'";
             echo "</script>";
         }
         
@@ -37,7 +37,7 @@
         {
             echo "<script>";
             echo "alert('Le fichier n'est pas une image !');";
-            echo "location.href='../template/Accueil.php'";
+            echo "location.href='../template/accueil.php'";
             echo "</script>";
         }
         

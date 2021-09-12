@@ -1,7 +1,7 @@
 <?php
 
-require "BDD.php";
-require "InputFileCreate.php";
+require "bdd.php";
+require "inputFileCreate.php";
 
 
 if(isset($_POST['CreateNameBottle']) && isset($_POST['CreateYearBottle']) && isset($_POST['CreateGrapesBottle']) && isset($_POST['CreateCountryBottle']) && isset($_POST['CreateRegionBottle']) && isset($_POST['CreateDescriptionBottle']) && isset($_FILES['CreatePictureBottle']) && !empty($_POST['CreateNameBottle']) && !empty($_POST['CreateYearBottle']) && !empty($_POST['CreateGrapesBottle']) && !empty($_POST['CreateCountryBottle']) && !empty($_POST['CreateRegionBottle']) && !empty($_POST['CreateDescriptionBottle']) && !empty($_FILES['CreatePictureBottle'])) {
@@ -22,14 +22,14 @@ if(isset($_POST['CreateNameBottle']) && isset($_POST['CreateYearBottle']) && iss
 
             echo "<script>";
             echo "alert('La bouteille de vin a bien été rajouté dans le catalogue');";
-            echo "location.href='../template/Catalogue.php'";
+            echo "location.href='../template/catalogue.php'";
             echo "</script>";
         
 
     } else {
         echo "<script>";
         echo "alert('La bouteille de vin n'a pas été rajouté dans la catalogue !');";
-        echo "location.href='../template/ModifCatalogue.php'";
+        echo "location.href='../template/modifCatalogue.php'";
         echo "</script>";
     }
 

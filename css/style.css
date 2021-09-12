@@ -3,24 +3,39 @@
 :root {
   --primary-color: #3e0018;
   --secondary-color: #88002d;
-  --third-color: ;
+  --third-color: #885c7e;
   --bckg-color: white;
   --txt-color: black;
 
-  --dark-color: rgb(194, 194, 194);
+  --dark-color: black;
   --light-color: white;
   --lightSecond-color: rgb(239, 236, 228);
+
+  --GapPageRightLeft: 9%;
 }
 
 /**********GENERAL************/
 body {
-  font-family: "Source Sans Pro Bold", sans-serif;
-  padding-right: 9%;
-  padding-left: 9%;
-  padding-bottom: 50px;
+  font-family: "Source Sans Pro Regular", sans-serif;
+  font-weight: 400;
+  /* Padding enlever du body, A METTRE PARTOUT dans le site sur chaque section*/
   background-image: var(--bckg-color);
   color: var(--txt-color);
-  font-size: 20px;
+  font-size: 18px;
+  letter-spacing: 0.7px;
+  line-height: 1.5;
+}
+
+.LogoFacebook {
+  width: 35px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.LogoInstagram {
+  width: 35px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 h1,
@@ -30,6 +45,11 @@ h4,
 h5,
 h6 {
   color: var(--secondary-color);
+}
+
+h1 {
+  font-size: 75px;
+  margin-top: 15px;
 }
 
 a {
@@ -51,10 +71,33 @@ input[type="submit"] {
 input[type="submit"]:hover {
   box-shadow: 4px 3px 9px 0px rgb(142 20 20 40%);
   color: var(--secondary-color);
-  background-color: var(--third-color);
+  background-color: var(--lightSecond-color);
 }
 
 input[type="submit"]:active {
+  box-shadow: 4px 3px 9px 0px rgb(142 20 20 40%);
+  transition: all ease-in-out;
+  background-color: var(--bckg-color);
+}
+
+.Abutton {
+  color: var(--light-color);
+  background-color: var(--secondary-color);
+  border: 3px var(--light-color) solid;
+  border-radius: 15px;
+  padding: 16px 24px;
+  box-shadow: 4px 3px 9px 0px rgb(0 0 0 / 20%);
+  transition: all 0.3s ease-in-out;
+  margin-top: 30px;
+}
+
+.Abutton:hover {
+  box-shadow: 4px 3px 9px 0px rgb(142 20 20 40%);
+  color: var(--secondary-color);
+  background-color: var(--lightSecond-color);
+}
+
+.Abutton:active {
   box-shadow: 4px 3px 9px 0px rgb(142 20 20 40%);
   transition: all ease-in-out;
   background-color: var(--bckg-color);
@@ -91,8 +134,14 @@ input[type="file"] {
 header {
   margin-top: 30px;
   display: flex;
-  justify-content: space-around;
-  margin-bottom: 70px;
+  align-items: center;
+  background-color: var(--lightSecond-color);
+  padding-left: var(--GapPageRightLeft);
+  padding-right: var(--GapPageRightLeft);
+  padding-bottom: 20px;
+  padding-top: 20px;
+  box-shadow: 0px -50px var(--primary-color);
+  position: relative;
 }
 
 .Menu {
@@ -102,7 +151,199 @@ header {
 header ul {
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
+}
+
+header li {
+  padding-right: 10px;
+  padding-left: 10px;
+  text-align: center;
+}
+
+header a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.MenuBurger {
+  display: none;
+}
+
+/***********HEADER BURGER RESPONSIV**************/
+
+@media screen and (max-width: 1095px) {
+  .Menu {
+    display: none;
+  }
+
+  .MenuBurger {
+    display: flex;
+  }
+
+  /* header #link {   ESSAI LOGO BURGER ALIGNER A LA FIN DE LA DIV
+    display: flex;
+    align-content: flex-end;
+  } */
+
+  #burger {
+    width: 30px;
+    height: 3px;
+    background: black;
+    display: inline-block;
+    position: relative;
+  }
+  #burger::before,
+  #burger::after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background: black;
+    display: inline-block;
+    position: absolute;
+    transform-origin: center;
+    transition: all 0.3s ease;
+  }
+  #burger::before {
+    top: -7px;
+  }
+  #burger::after {
+    top: 7px;
+  }
+
+  #burger.open {
+    background: black;
+  }
+  #burger.open::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  #burger.open::after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+
+  #list-burger {
+    background: var(--lightSecond-color);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 100%;
+    padding: 10px 0;
+    transform: scaleY(0);
+    transform-origin: center top;
+    transition: all 0.3s ease;
+  }
+  #list-burger.open {
+    transform: scaleY(1);
+  }
+  #list-burger li {
+    padding: 10px 0;
+    text-align: center;
+  }
+}
+
+/*******PAGE ACCUEIL ****/
+
+/*****PREMIERE SECTION EN TETE *****/
+.premiereSectionAccueil {
+  padding-left: var(--GapPageRightLeft);
+  padding-right: var(--GapPageRightLeft);
+  display: flex;
+  box-shadow: inset 0px 5px 8px rgb(0 0 0 / 16%);
+}
+
+.imgAccueil {
+  width: 40%;
+  background-image: url(../img/site_charte/pexels-bernyce-hollingworth-2702805.jpg);
+  background-position: center;
+  height: 44em;
+  box-shadow: -200px 0px var(--primary-color);
+  background-repeat: no-repeat;
+}
+
+.contactadresseAccueil {
+  margin-top: 75px;
+  display: flex;
   justify-content: space-around;
+  text-align: center;
+  background-color: var(--lightSecond-color);
+  box-shadow: 0px 0px 48px 8px rgb(0 0 0 / 16%);
+}
+
+.presAccroche {
+  margin: 50px 50px 50px 100px;
+  width: 35vw;
+}
+
+.reseauxSociauxAccueil {
+  background-color: var(--lightSecond-color);
+  box-shadow: 0px 0px 48px 8px rgb(0 0 0 / 16%);
+  height: 165px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondary-color);
+}
+
+/***** PAGE ACCUEIL 2EME SECTION A PROPOS ACCUEIL *****/
+
+.aproposAccueil {
+  padding-left: var(--GapPageRightLeft);
+  padding-right: var(--GapPageRightLeft);
+  display: flex;
+}
+
+.texteaproposAccueil {
+  width: 40%;
+  padding: 5%;
+}
+
+.texteaproposAccueil h2 {
+  margin-bottom: 50px;
+}
+
+.imgAproposAccueil {
+  width: 49%;
+  background-image: url(../img/site_charte/Cave_my_cave.jpg);
+  background-position: center;
+  height: 47em;
+  box-shadow: 200px 0px var(--primary-color);
+}
+
+/***** PAGE ACCUEIL 3EME SECTION ********/
+
+.sectioncarteAccueil {
+  display: flex;
+  padding: 7% var(--GapPageRightLeft);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tripleCarte {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  width: 20%;
+  margin: 25px;
+  padding: 25px;
+  box-shadow: 0px 2px 18px 0px rgb(0 45 76 / 30%);
+  border: 10px solid var(--light-color);
+  min-width: 192px;
+}
+
+.tripleCarte h3 {
+  color: var(--light-color);
+}
+
+/******PAGE NOS VINS *****/
+
+.imgNosVins {
+  width: 40%;
+  background-image: url(../img/site_charte/PhotoNosVins.jpg);
+  background-position: center;
+  height: 44em;
+  box-shadow: -200px 0px var(--primary-color);
+  background-repeat: no-repeat;
 }
 
 /*****CONTAINER + CARDS READ****/
@@ -205,13 +446,6 @@ textarea {
   color: rgb(38, 50, 56);
 }
 
-/******footer*****/
-
-footer {
-  margin-top: 75px;
-  border-top: black 1px solid;
-}
-
 /********Form User********/
 
 .ConnexionUser,
@@ -234,4 +468,96 @@ footer {
 .ConnexionUser h2,
 .InscriptionUser h2 {
   text-align: center;
+}
+
+/********PAGE CONTACT**********/
+
+.imgContact {
+  width: 40%;
+  background-image: url(../img/site_charte/PhotoNosVins.jpg);
+  background-position: center;
+  height: 44em;
+  box-shadow: -200px 0px var(--primary-color);
+  background-repeat: no-repeat;
+}
+
+/******footer*****/
+
+footer {
+  margin-top: 75px;
+}
+
+.AbuttonFooter {
+  padding: 40px;
+}
+
+.firstsectionFooter {
+  margin: 50px var(--GapPageRightLeft) 0px var(--GapPageRightLeft);
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--primary-color);
+  color: white;
+  box-shadow: 500px 0px var(--lightSecond-color),
+    -500px 0px var(--lightSecond-color);
+}
+
+/* @media screen and (max-width: 690px) {
+  .firstsectionFooter {
+    margin: 50px var(--GapPageRightLeft) 0px var(--GapPageRightLeft);
+    padding-bottom: 30px;
+    display: inline;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    box-shadow: 500px 0px var(--lightSecond-color),
+      -500px 0px var(--lightSecond-color);
+  }
+} */
+
+.firstsectionFooter a,
+.firstsectionFooter h2,
+.firstsectionFooter h3,
+.firstsectionFooter h4 {
+  color: white;
+}
+
+.txtaccroche {
+  width: 41%;
+  text-align: center;
+}
+
+.txtaccroche img {
+  width: 200px;
+  margin-top: 75px;
+}
+
+.infoContact {
+  width: 41%;
+}
+
+.textContact {
+  margin: 15px 0px;
+}
+
+.secondsectionFooter {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  font-weight: 600;
+  background-color: var(--lightSecond-color);
+  padding: 30px 0px;
+  margin: 0px var(--GapPageRightLeft);
+  box-shadow: 500px 0px var(--primary-color), -500px 0px var(--primary-color);
+}
+.droitReserves {
+  text-align: center;
+  margin-left: var(--GapPageRightLeft);
+  margin-right: var(--GapPageRightLeft);
+  box-shadow: 500px 0px var(--primary-color), -500px 0px var(--primary-color);
+}
+
+.droitReserves p {
+  margin: 0;
+  padding: 20px 0px;
 }

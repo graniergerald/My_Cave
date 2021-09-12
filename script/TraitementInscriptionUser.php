@@ -1,6 +1,6 @@
 <?php
 
-require "BDD.php";
+require "bdd.php";
 
 
 if($_POST['CreateUserPassword'] !== $_POST['CreateUserPasswordConfirm'] )
@@ -8,7 +8,7 @@ if($_POST['CreateUserPassword'] !== $_POST['CreateUserPasswordConfirm'] )
     {
         echo "<script>";
         echo "alert('Les 2 mots de passes sont différents !');";
-        echo "location.href='../template/Accueil.php'";
+        echo "location.href='../template/accueil.php'";
         echo "</script>"; 
     }
 
@@ -30,14 +30,14 @@ if($_POST['CreateUserPassword'] !== $_POST['CreateUserPasswordConfirm'] )
         
         echo "<script>";
         echo "alert('L\'utilisateur est maintenant inscrit');";
-        echo "location.href='../template/ModifCatalogue.php'";
+        echo "location.href='../template/modifCatalogue.php'";
         echo "</script>";
         
         
         } else {
         echo "<script>";
         echo "alert('Il manque des informations !');";
-        echo "location.href='../template/Accueil.php'";
+        echo "location.href='../template/accueil.php'";
         echo "</script>"; 
     
 }}

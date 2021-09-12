@@ -1,6 +1,6 @@
 <?php
 
-include "Affichage.php";
-include "BDD.php";
+include "affichage.php";
+include "bdd.php";
 
 ?>
