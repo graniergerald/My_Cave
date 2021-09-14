@@ -4,8 +4,8 @@ if (sessionStorage.getItem("FenetreAlcool") === null) {
 }
 
 /* Sélection des éléments HTML */
-let link = document.getElementById("link");
-let burger = document.getElementById("burger");
+let link = document.querySelector("#link");
+let burger = document.querySelector("#burger");
 let ulBurger = document.getElementById("list-burger");
 
 console.log(link);

@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="../css/style.css">
         <title>My Cave</title>
         <?php include "../script/Main.php"; ?>
-        <script src="../js/index.js"></script>
+        <script src="../js/index.js" defer ></script>
     </head>
 
     

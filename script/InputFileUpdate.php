@@ -18,6 +18,14 @@ function checkPictureUpdate()
             echo "location.href='../template/accueil.php'";
             echo "</script>";
         }
+
+        elseif ($_FILES['UpdatePictureBottle']['error'] == 4) 
+        {
+            $file_exists = FALSE;
+            $set_request = TRUE;
+        }
+
+        else{$file_exists = TRUE;} 
         
         $fileSize = $_FILES['UpdatePictureBottle']['size'];
         
@@ -46,6 +54,7 @@ function checkPictureUpdate()
         $resultat = move_uploaded_file($_FILES['UpdatePictureBottle']['tmp_name'], $fileName);
 
         return $uniqueName;
+        
     }
         
         $PictureUpdate = checkPictureUpdate();

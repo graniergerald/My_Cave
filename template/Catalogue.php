@@ -35,7 +35,18 @@
     </div>
 </div>
 
-<?php include 'includeContent/cardReadBottle.php'; ?>
+<div class="FirstSectionCatalogue">
+
+</div>
+
+<div class="catalogue">
+
+    <h2> Catalogue de nos bouteilles </h2>
+
+    <?php include 'includeContent/cardReadBottle.php'; ?>
+    
+</div>
+
 
     
 <?php include 'includeContent/footer.php'; ?>

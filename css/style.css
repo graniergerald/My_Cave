@@ -11,14 +11,48 @@
   --light-color: white;
   --lightSecond-color: rgb(239, 236, 228);
 
-  --GapPageRightLeft: 9%;
+  --GapPageRightLeft: 8%;
+}
+
+@media screen and (max-width: 1095px) {
+  :root {
+    --GapPageRightLeft: 6%;
+  }
+  body {
+    font-size: 17px;
+  }
+
+  .contactadresseAccueil {
+    padding: 15px;
+  }
+
+  .premiereSectionAccueil {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 875px) {
+  :root {
+    --GapPageRightLeft: 4%;
+  }
+  .contactadresseAccueil {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 666px) {
+  :root {
+    --GapPageRightLeft: 0%;
+  }
+  .MenuBurger {
+    margin-right: 5px;
+  }
 }
 
 /**********GENERAL************/
 body {
   font-family: "Source Sans Pro Regular", sans-serif;
   font-weight: 400;
-  /* Padding enlever du body, A METTRE PARTOUT dans le site sur chaque section*/
   background-image: var(--bckg-color);
   color: var(--txt-color);
   font-size: 18px;
@@ -52,9 +86,15 @@ h1 {
   margin-top: 15px;
 }
 
-@media screen and (max-width: 895px) {
+@media screen and (max-width: 875px) {
   h1 {
     font-size: 55px;
+  }
+}
+
+@media screen and (max-width: 666px) {
+  h1 {
+    font-size: 47px;
   }
 }
 
@@ -186,11 +226,9 @@ header a {
     display: flex;
   }
 
-  /* header #link {   ESSAI LOGO BURGER ALIGNER A LA FIN DE LA DIV
-    display: flex;
-    align-content: flex-end;
-  } */
-
+  header {
+    justify-content: space-between;
+  }
   #burger {
     width: 30px;
     height: 3px;
@@ -217,7 +255,7 @@ header a {
   }
 
   #burger.open {
-    background: black;
+    background: transparent;
   }
   #burger.open::before {
     transform: rotate(45deg);
@@ -238,6 +276,9 @@ header a {
     transform: scaleY(0);
     transform-origin: center top;
     transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
   }
   #list-burger.open {
     transform: scaleY(1);
@@ -258,6 +299,12 @@ header a {
   box-shadow: inset 0px 5px 8px rgb(0 0 0 / 16%);
 }
 
+.presentation {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
 .imgAccueil {
   width: 40%;
   background-image: url(../img/site_charte/pexels-bernyce-hollingworth-2702805.jpg);
@@ -268,7 +315,7 @@ header a {
 }
 
 .contactadresseAccueil {
-  margin-top: 75px;
+  margin-top: 5%;
   display: flex;
   justify-content: space-around;
   text-align: center;
@@ -277,8 +324,7 @@ header a {
 }
 
 .presAccroche {
-  margin: 50px 50px 50px 100px;
-  width: 35vw;
+  margin: 50px 50px 50px 12%;
 }
 
 .reseauxSociauxAccueil {
@@ -290,6 +336,7 @@ header a {
   align-items: center;
   justify-content: center;
   color: var(--secondary-color);
+  text-align: center;
 }
 
 /***** PAGE ACCUEIL 2EME SECTION A PROPOS ACCUEIL *****/
@@ -314,7 +361,7 @@ header a {
   background-image: url(../img/site_charte/Cave_my_cave.jpg);
   background-position: center;
   height: 47em;
-  box-shadow: 200px 0px var(--primary-color);
+  box-shadow: 250px 0px var(--primary-color);
 }
 
 /***** PAGE ACCUEIL 3EME SECTION ********/
@@ -486,18 +533,51 @@ textarea {
   background-repeat: no-repeat;
 }
 
-.QuiSuisJe {
-  background-image: url(../img/site_charte/pexels-lukas-1410138.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 1000px;
+.QuiSuisJe1 {
+  margin-top: 50px;
   display: flex;
+  margin-right: var(--GapPageRightLeft);
+  margin-left: var(--GapPageRightLeft);
   justify-content: center;
 }
 
-.txtQuiSuisJe {
-  width: 600px;
-  background-color: #f4f4f4;
+.Img1QuiSuisJe {
+  width: 34%;
+  background-image: url(../img/site_charte/Image_1_Histoire_de_Joël.png);
+  height: 44em;
+  background-repeat: no-repeat;
+}
+
+.txt1QuiSuisJe {
+  width: 66%;
+  padding: 20px;
+  background-color: rgb(239, 236, 228);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.QuiSuisJe2 {
+  display: flex;
+  margin-right: var(--GapPageRightLeft);
+  margin-left: var(--GapPageRightLeft);
+  justify-content: center;
+}
+
+.txt2QuiSuisJe {
+  width: 66%;
+  padding: 20px;
+  background-color: rgb(239, 236, 228);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Img2QuiSuisJe {
+  width: 34%;
+  background-image: url(../img/site_charte/Image_2_Histoire_de_Joël.png);
+  height: 44em;
+  background-repeat: no-repeat;
 }
 
 /********PAGE CATALOGUE DE VINS*********/
@@ -516,6 +596,16 @@ textarea {
   padding-right: var(--GapPageRightLeft);
 }
 
+.FirstSectionCatalogue {
+  margin-left: var(--GapPageRightLeft);
+  margin-right: var(--GapPageRightLeft);
+}
+
+.catalogue {
+  margin-left: var(--GapPageRightLeft);
+  margin-right: var(--GapPageRightLeft);
+}
+
 /********PAGE CONTACT**********/
 
 .imgContact {
@@ -528,11 +618,17 @@ textarea {
 }
 
 .MapVenezNousVoir {
+  /*** box-shadow: -500px -500px pink; **/
+
   padding-right: var(--GapPageRightLeft);
   padding-left: var(--GapPageRightLeft);
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.formFooter {
+  position: relative;
 }
 
 .txtMap {

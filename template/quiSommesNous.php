@@ -10,10 +10,10 @@
     </div>
     <div class="presentation">
         <div class="presAccroche">
-            <h3>Ecrivez-nous</h3>
+            <h3>Venez découvrir l'histoire de Mr Granier</h3>
             <h1>Qui sommes-nous ?</h1>
             <p>Venez découvrir l'histoire de notre sommelier Granier Joël et de son fils.</p>
-            <p>Tout à commencé en 1992...</p>
+            <p>Tout à commencé en 2013...</p>
         </div>
         <div class="contactadresseAccueil">
             <div class="contactAccueil">
@@ -35,9 +35,41 @@
     </div>
 </div>
 
-<div class="QuiSuisJe">
-    <div class="txtQuiSuisJe">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum odio dolorum dicta nemo provident exercitationem, eos sit at recusandae qui obcaecati mollitia molestias cum veniam. Consequatur vitae quae nihil placeat!
+<div class="QuiSuisJe1">
+    <div class="Img1QuiSuisJe">
+
+    </div>
+    <div class="txt1QuiSuisJe">
+        <h3>Qui sommes-nous ?</h3>
+        <p>
+            Tout commence en 2013, ceci est le moment où Monsieur Granier s'est dit : "Et si je fesais de ma passion mon métier ?" Pour expliquer son chemin qui l'a amené à faire sa, voyons d'abord son passé professionnelle et personnel.
+        </p>
+        <p>
+            Dés son plus jeune âge, dés sa majorité, Joël avais déja cette curiosité de vouloir boire plusieurs vins. D'originaire de l'Aveyron, il a commencé par le pinard et à très vite compris que pour sa conservation il devais y dédié un espace réservé à ses bouteilles. Parce qu'il n'avais pas d'endroit chez lui pour les conserver, il décida de les laisser chez son père. Son père a malheuresement bû certains vin de sa collection. Est-ce volontaire ou pas ? Nous le serons jamais, mais Joël faisait déja du stock et acheté déja pas mal de bouteilles.
+        </p> 
+        <p>
+            Vous l'aurez compris, dés ses 18ans, le vin prenait déja une bonne partie de son temps personnel. Quand est-t-il du milieu profesionnel à cette époque là ? Joël a travaillé 1an à la SNCF car il étais aussi passioné par la conduite de train. Il a reussi ses examen mais malheuresement il y avais trop de monde qui demandait ce poste. Joël a du coup fait agent au sein de la gare. Ne voulant pas de ce poste là, il a décidé de partir dans un autre domaine, la Caisse des dépots et Consignation. Il a effectué 10 ans de carrière à la Caisse des Dépots et Consignation de Paris puis il est parti à Bordeaux.
+        </p>
+    </div>
+
+</div>
+
+
+<div class="QuiSuisJe2">
+    <div class="txt2QuiSuisJe">
+        <p>
+            C'est à ce moment, en 1992, qu'il est tomber amoureux, amoureux de la femme de son futur fils mais aussi amoureux des vins de la région. Il a eu son fils Gérald en 1993. Il a continué sa carrière jusqu'en 2013. Sur son temps personnel, Joël ne loupais pas une seule dégustation de vins dans le Médoc. Ses week-end, il l'est passais à ce balader dans cette belle région du Médoc. Il avais sa cave à vin personnel dans le garage et achetais les vins par cartons.
+        </p>
+        <p>
+            Et puis cette année arriva, 2013, le moment où il quitta son poste dans la Caisse des Dépots et Consigation pour effectuer une reconversion et faire de sa passion son métier : devenir sommelier. Il a effectué une formation puis un stage. Il a eu son examen avec succès et il a crée sa cave à vins : MyCave, l'entreprise que vous connaissez aujourd'hui. Il a eu l'aide de son fils Gérald, pour la création de l'entreprise, pour la communication, la création de son site internet. Joël s'est lancé et il adore son métier, il est maintenant heureux d'avoir enfin sa cave à vins et d'en faire son métier. Joël se fera un plaisir de venir vous conseiller et de discuter de sa passion avec vous.
+        </p>
+        <p>
+            A bientôt dans notre cave à vin et nous vous souhaitons une bonne visite.
+        </p>
+    </div>
+
+    <div class="Img2QuiSuisJe">
+
     </div>
 
 </div>
