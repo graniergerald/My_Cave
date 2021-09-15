@@ -1,7 +1,7 @@
 <?php
 
 require "bdd.php";
-require "inputFileCreate.php";
+//  require "inputFileCreate.php";
 
 
 if(isset($_POST['CreateNameBottle']) && isset($_POST['CreateYearBottle']) && isset($_POST['CreateGrapesBottle']) && isset($_POST['CreateCountryBottle']) && isset($_POST['CreateRegionBottle']) && isset($_POST['CreateDescriptionBottle']) && isset($_FILES['CreatePictureBottle']) && !empty($_POST['CreateNameBottle']) && !empty($_POST['CreateYearBottle']) && !empty($_POST['CreateGrapesBottle']) && !empty($_POST['CreateCountryBottle']) && !empty($_POST['CreateRegionBottle']) && !empty($_POST['CreateDescriptionBottle']) && !empty($_FILES['CreatePictureBottle'])) {
@@ -16,7 +16,8 @@ if(isset($_POST['CreateNameBottle']) && isset($_POST['CreateYearBottle']) && iss
             $CreateDescriptionBottleClean = filter_var(($_POST['CreateDescriptionBottle']), FILTER_SANITIZE_SPECIAL_CHARS);
             $CreatePictureBottleClean = filter_var(($_FILES['CreatePictureBottle']), FILTER_SANITIZE_SPECIAL_CHARS);
 
-            checkPictureInsert();
+            //checkPictureInsert();
+            include "inputFileCreate.php";
 
             createBottleBDD($CreateNameBottleClean, $CreateYearBottleClean, $CreateGrapesBottleClean, $CreateCountryBottleClean, $CreateRegionBottleClean, $CreateDescriptionBottleClean, $PictureInsert);
 
