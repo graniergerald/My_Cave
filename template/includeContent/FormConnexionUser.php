@@ -1,8 +1,8 @@
 <form class="ConnexionUser" id="ConnexionUser" method="post" action="../script/TraitementConnexionUser.php">
         <legend> <h2>Se connecter :</h2></legend>
         <p>
-            <label for="SelectUserNickname">Pseudo</label>
-            <input type="text" name="SelectUserNickname" id="SelectUserNickname" maxlength="100" size="20" required>
+            <label for="SelectUserNickname">Identifiant</label>
+            <input type="text" name="SelectUserNickname" id="SelectUserNickname" maxlength="100" size="18" required>
         </p>
         
         <p>

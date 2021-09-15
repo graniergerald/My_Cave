@@ -18,8 +18,3 @@ link.addEventListener("click", function (e) {
   burger.classList.toggle("open");
   ulBurger.classList.toggle("open");
 });
-
-if (sessionStorage.getItem("FenetreAlcool") === null) {
-  window.alert("L'alcool est dangereux pour la santé, buvez avec modération");
-  sessionStorage.setItem("FenetreAlcool", "ok");
-}
