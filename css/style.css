@@ -31,6 +31,11 @@
   }
 }
 
+.img-card {
+  max-height: 200px !important;
+  max-width: 200px !important;
+}
+
 @media screen and (max-width: 875px) {
   :root {
     --GapPageRightLeft: 4%;
@@ -38,14 +43,109 @@
   .contactadresseAccueil {
     flex-direction: column;
   }
+  .CardsBottles {
+    width: 85% !important;
+  }
+
+  .img-card {
+    max-height: 300px !important;
+    max-width: 300px !important;
+  }
 }
 
 @media screen and (max-width: 666px) {
   :root {
     --GapPageRightLeft: 0%;
   }
+  .ImgAccueilDiv img {
+    width: 250px;
+    height: auto;
+  }
   .MenuBurger {
     margin-right: 5px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  body {
+    font-size: 17px;
+    text-align: justify;
+  }
+  .presAccroche {
+    margin: 10px !important;
+  }
+  .aproposAccueil {
+    flex-direction: column;
+  }
+
+  .imgAccueil,
+  .imgNosVins,
+  .imgQuiSommesNous,
+  .imgContact,
+  .imgCatalogue {
+    display: none;
+  }
+
+  .imgAproposAccueil,
+  .texteaproposAccueil {
+    width: 95% !important;
+    justify-content: center;
+    margin: 5px;
+  }
+
+  .texteaproposAccueil {
+    padding: 5px 5px 25px 5px !important;
+  }
+
+  .firstsectionFooter,
+  .secondsectionFooter {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .txtaccroche {
+    width: 95% !important;
+  }
+
+  .infoContact {
+    width: 95% !important;
+  }
+
+  .tripleCarte {
+    width: 95% !important;
+  }
+
+  .img-card {
+    max-height: 250px !important;
+    max-width: 250px !important;
+  }
+
+  .QuiSuisJe1,
+  .QuiSuisJe2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Img1QuiSuisJe,
+  .Img2QuiSuisJe {
+    width: 100% !important;
+  }
+
+  .txt1QuiSuisJe,
+  .txt2QuiSuisJe {
+    width: 87% !important;
+  }
+
+  .MapVenezNousVoir {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contactadresseAccueil {
+    padding: 0px;
   }
 }
 
@@ -350,6 +450,7 @@ header a {
 .texteaproposAccueil {
   width: 40%;
   padding: 5%;
+  text-align: justify;
 }
 
 .texteaproposAccueil h2 {
@@ -386,6 +487,7 @@ header a {
 
 .tripleCarte h3 {
   color: var(--light-color);
+  text-align: center;
 }
 
 /******PAGE NOS VINS *****/
@@ -412,9 +514,9 @@ header a {
 .CardsBottles {
   display: flex;
   flex-direction: column;
-  width: 25%;
+  width: 35%;
   height: auto;
-  margin: 15px;
+  margin: 2%;
   padding: 15px;
   border-radius: 20px;
   background-color: var(--lightSecond-color);
@@ -582,6 +684,9 @@ textarea {
 
 /********PAGE CATALOGUE DE VINS*********/
 
+.catalogue h2 {
+  text-align: center;
+}
 .imgCatalogue {
   width: 40%;
   background-image: url(../img/site_charte/ModifCatalogueImg.jpg);

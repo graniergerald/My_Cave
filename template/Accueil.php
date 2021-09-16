@@ -12,7 +12,7 @@
         <div class="presAccroche">
             <h3>Cave à vin à Audenge</h3>
             <h1>My Cave</h1>
-            <p>Situé à deux pas du centre ville de Audenge, MyCave vous accueil du Lundi au Vendredi de 9h à 13h puis de 15h à 19h et le Samedi de 9h à 19h sans interruption. N'hésitez pas à demander conseil et à venir à nos ateliers dégustations.</p>
+            <p>Située à deux pas du centre ville de Audenge, MyCave vous accueille du Lundi au Vendredi de 9h à 13h puis de 15h à 19h et le Samedi de 9h à 19h sans interruption. N'hésitez pas à demander conseil et venir à nos ateliers dégustations.</p>
         </div>
         <div class="contactadresseAccueil">
             <div class="contactAccueil">
@@ -38,18 +38,19 @@
     <div class="texteaproposAccueil">
         <h2>Bienvenue chez MyCave</h2>
         <p>
-            MyCave c'est la concrétisation d'un rêve de partager la passion pour le vin de notre région et des spécialités local.
+            MyCave est la concrétisation d'un rêve de partager la passion pour des vins provenant de différentes régions et des spécialités locales.
         </p>
         <p>
-            On vous accueil dans une lieux chaleureux, haut en couleur et en tanins pour le choix de votre bouteille qui accompagnera parfaitement vos repas ou vos apéritifs.
+            On vous accueille dans un lieu chaleureux, haut en couleur et en tanins pour le choix de votre bouteille qui accompagnera parfaitement vos repas ou vos apéritifs.
         </p>
         <p>
-            MyCave c'est un lieu agréable. Nous avons pas moins d'une vintaine de partenariat qui vous permettras de voyager dans la région à travers nos bouteilles. Nous avons un large choix de vins et à tout prix.
+            MyCave est un lieu agréable. Nous n'avons pas moins d'une vingtaine de partenariats qui vous permettront de voyager dans notre région et au-delà de nos frontières. Nous avons un large choix de vins et de produits de qualité qui seront exalter vos papilles.
         </p>
         <p>
             "L'Art et le Vin servent au rapprochement des hommes."
         </p>
-        <p>Je vous souhaite une agréable visite sur notre site et dans notre boutique physique !
+        <p>
+            Nous vous souhaitons une agréable visite sur notre site et dans notre boutique physique !
         </p>
         </br>
         <a href="catalogue.php" class="Abutton">
@@ -64,21 +65,21 @@
 
 <div class="sectioncarteAccueil">
     <div class="tripleCarte">
-        <h3>Notre gage de satisfaction</h3>
+        <h3>Notre gage de qualité</h3>
         <p>
-            Parce que nous aimons satisfaire nos clients, nous vous réservons une attention toute particulière pour vous satisfaire dans votre choix de vins.
+            Nous sélectionnons nos produits avec soins grâce aux multiples collaborations avec des viticulteurs expérimentés et passionnés. Les vins proposés ont été goutés par notre sommelier pour s'assurer de leur qualité. 
         </p>
     </div>
     <div class="tripleCarte">
-        <h3>L'attention de notre sommelier</h3>
+        <h3>Notre accompagnement</h3>
         <p>
-            Notre expérience, c'est notre passion. Ceci a fais aujourd'hui que nous avons beaucoup de connaissances et que nous chercherons toujours à bien vous conseiller. 
+            Notre expérience, c'est notre passion. Grâce aux connaissances accumumlées au fil des années et parce que nous aimons satisfaire nos clients, nous vous réservons une attention toute particulière pour vous accompagner dans vos choix.
         </p>
     </div>
     <div class="tripleCarte">
         <h3>Nous aimons notre région</h3>
         <p>
-            Nous aimons notre belle Aquitaine et nous adorons faire la promotions de ses bouteilles. Nous mettons à disposition en boutiques des brochures venant des offices de tourisme pour vour faire découvrir nos beaux chateaux de la région.
+            Nous aimons notre belle Aquitaine et nous adorons faire la promotion de ses bouteilles. Nous mettons à disposition en boutiques des brochures venant des offices de tourisme pour vour faire découvrir nos beaux châteaux de la région.
         </p>
     </div>
 </div>

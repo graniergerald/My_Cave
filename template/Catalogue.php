@@ -12,7 +12,7 @@
         <div class="presAccroche">
             <h3>A déguster</h3>
             <h1>Nos Vins</h1>
-            <p>Venez découvrir nos vins de la région sélectionné par notre sommelier.</p>
+            <p>Venez découvrir nos vins de la région sélectionnés par notre sommelier.</p>
             <p>Vous trouverez une large gamme de vins dans notre boutique.</p>
         </div>
         <div class="contactadresseAccueil">

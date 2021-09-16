@@ -8,10 +8,6 @@ let link = document.querySelector("#link");
 let burger = document.querySelector("#burger");
 let ulBurger = document.getElementById("list-burger");
 
-console.log(link);
-console.log(burger);
-console.log(ulBurger);
-
 /* gestionnaire d'événement sur le a#link pour venir changer l'attribution de la classe .open à la ul et au span#burger */
 link.addEventListener("click", function (e) {
   e.preventDefault();

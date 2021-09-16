@@ -17,7 +17,7 @@ function ReadCardBottles($NomArray){
                     echo "<p>Année : $valueb </p>";
                     break;
                 case "grapes":
-                    echo "<p>Sépage : $valueb </p>";
+                    echo "<p>Cépage : $valueb </p>";
                     break;
                 case "country":
                     echo "<p>Pays : $valueb </p>";
@@ -147,7 +147,7 @@ function FormUpdateDeleteBottle() {
                             echo '
                         <p>
                         <label for="UpdateDescriptionBottle">Description</label>
-                        <input type="text" name="UpdateDescriptionBottle" id="UpdateDescriptionBottle" maxlength="250" size="30" value="'.$value.'" required>
+                        <textarea type="text" name="UpdateDescriptionBottle" id="UpdateDescriptionBottle" maxlength="250" size="30" value="'.$value.'" required></textarea>
                         </p>';
                         break;
 

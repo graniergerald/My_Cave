@@ -14,7 +14,7 @@
             <h3></h3>
             <h1>Modification du catalogue</h1>
             <p>Voici la page pour modifier le catalogue de votre cave.</p>
-            <p>Cette page est réservés aux personnes ayant un compte (employés de MyCave).</p>
+            <p>Cette page est réservée aux personnes ayant un compte (employés de MyCave).</p>
         </div>
         <div class="contactadresseAccueil">
             <div class="contactAccueil">
@@ -45,8 +45,8 @@
     if (!isset($_SESSION["NickNameUser"]) || $_SESSION["NickNameUser"] == FALSE) {
 
         
-        echo "<p> Vous devez être connecté pour modifier le catalogue de vins.</p>";
-         echo "<p> Si vous ne l'êtes pas, inscrivez vous.</p>";
+        echo "<p> Vous devez être connecté pour modifier le catalogue des vins.</p>";
+         echo "<p> Si vous n'avez pas encore de compte, inscrivez-vous.</p>";
         
         include 'includeContent/formConnexionUser.php';
          include 'includeContent/formInscriptionUser.php';

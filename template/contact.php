@@ -12,7 +12,7 @@
         <div class="presAccroche">
             <h3>Ecrivez-nous</h3>
             <h1>Contact</h1>
-            <p>Pour toute question ou demande de renseignements. N’hésitez pas à nous contacter par le biais de ces informations ou par le formulaire de contact.</p>
+            <p>Pour toute question ou demande de renseignements, n’hésitez pas à nous contacter par le biais de ces informations ou par le formulaire de contact.</p>
         </div>
         <div class="contactadresseAccueil">
             <div class="contactAccueil">
