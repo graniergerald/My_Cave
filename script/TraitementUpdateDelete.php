@@ -54,7 +54,7 @@ if (isset($_POST['InputDELETE'])) {
     else {
 
         echo "<script>";
-        echo "alert('Erreur Suppression du livre');";
+        echo "alert('Erreur Suppression de la bouteille');";
         echo "location.href='../template/modifCatalogue.php'";
         echo "</script>";
 }};

@@ -51,6 +51,25 @@
     max-height: 300px !important;
     max-width: 300px !important;
   }
+
+  .FormCreateBottle {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .InsertBottle {
+    width: 29vw !important;
+    margin: 20px 0px !important;
+  }
+  .SelectSelectBottle {
+    margin: 20px 0px !important;
+  }
+
+  .UpdateDeleteBottle {
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 666px) {
@@ -70,6 +89,10 @@
   body {
     font-size: 17px;
     text-align: justify;
+  }
+
+  h1 {
+    font-size: 2em !important;
   }
   .presAccroche {
     margin: 10px !important;
@@ -146,6 +169,10 @@
   }
   .contactadresseAccueil {
     padding: 0px;
+  }
+
+  .ConnexionUser {
+    width: auto !important;
   }
 }
 
@@ -543,11 +570,12 @@ header a {
 }
 
 .InsertBottle {
-  width: 400px;
+  width: 25vw;
   background-color: var(--lightSecond-color);
   padding: 20px;
   margin: 20px;
   border-radius: 20px;
+  min-width: 300px;
 }
 
 .InsertBottle p {
@@ -576,10 +604,12 @@ textarea {
 }
 
 .SelectSelectBottle {
-  width: 500px;
+  width: 25vw;
   background-color: var(--lightSecond-color);
   border-radius: 20px;
   margin: 20px;
+  min-width: 300px;
+  padding: 20px;
 }
 
 #BottleSelect {
@@ -699,6 +729,12 @@ textarea {
 .modifCatalogue {
   padding-left: var(--GapPageRightLeft);
   padding-right: var(--GapPageRightLeft);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  text-align: center;
 }
 
 .FirstSectionCatalogue {

@@ -46,10 +46,10 @@
 
         
         echo "<p> Vous devez être connecté pour modifier le catalogue des vins.</p>";
-         echo "<p> Si vous n'avez pas encore de compte, inscrivez-vous.</p>";
+        // echo "<p> Si vous n'avez pas encore de compte, inscrivez-vous.</p>";
         
         include 'includeContent/formConnexionUser.php';
-         include 'includeContent/formInscriptionUser.php';
+        // include 'includeContent/formInscriptionUser.php';
     }
      
     else

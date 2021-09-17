@@ -147,7 +147,7 @@ function FormUpdateDeleteBottle() {
                             echo '
                         <p>
                         <label for="UpdateDescriptionBottle">Description</label>
-                        <textarea type="text" name="UpdateDescriptionBottle" id="UpdateDescriptionBottle" maxlength="250" size="30" value="'.$value.'" required></textarea>
+                        <input type="text" name="UpdateDescriptionBottle" id="UpdateDescriptionBottle" maxlength="250" size="30" value="'.$value.'" required>
                         </p>';
                         break;
 

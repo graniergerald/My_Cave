@@ -11,21 +11,14 @@ function checkPictureUpdate()
         $maxSize = 50000000; 
         $validExt = array('.jpg', '.jpeg', '.gif', '.png');
         
-        if($_FILES['UpdatePictureBottle']['error'] > 0 && $_FILES['UpdatePictureBottle']['error'] !== 4 )
-        {
-            echo "<script>";
-            echo "alert('Une erreur est survenu lors du téléchargement');";
-            echo "location.href='../template/accueil.php'";
-            echo "</script>";
-        }
+        // if($_FILES['UpdatePictureBottle']['error'] > 0)
+        // {
+        //     echo "<script>";
+        //     echo "alert('Une erreur est survenu lors du téléchargement');";
+        //     echo "location.href='../template/accueil.php'";
+        //     echo "</script>";
+        // }
 
-        elseif ($_FILES['UpdatePictureBottle']['error'] == 4) 
-        {
-            $file_exists = FALSE;
-            $set_request = TRUE;
-        }
-
-        else{$file_exists = TRUE;} 
         
         $fileSize = $_FILES['UpdatePictureBottle']['size'];
         
@@ -38,15 +31,15 @@ function checkPictureUpdate()
         }
         
         $fileName = $_FILES['UpdatePictureBottle']['name'];
-        $fileExt = "." . strtolower(substr(strrchr($fileName, '.'), 1));
+        // $fileExt = strtolower(pathinfo($fileName, PATHINFO_EXTENSION), $validExt);
         
-        if(!in_array($fileExt, $validExt))
-        {
-            echo "<script>";
-            echo "alert('Le fichier n'est pas une image !');";
-            echo "location.href='../template/accueil.php'";
-            echo "</script>";
-        }
+        // if(!in_array($fileExt, $validExt))
+        // {
+        //     echo "<script>";
+        //     echo "alert('Le fichier n'est pas une image !');";
+        //     echo "location.href='../template/accueil.php'";
+        //     echo "</script>";
+        // }
         
         $tmpName = $_FILES['UpdatePictureBottle']['tmp_name'];
         $uniqueName = uniqid() . '_' . $_FILES['UpdatePictureBottle']['name'];
