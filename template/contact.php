@@ -61,24 +61,39 @@
     </div>
 </div>
 
-<script type="text/javascript" src="https://form.jotform.com/jsform/212538130135344"></script>
+<div class="formContact">
 
-<form class="formContact" action="traitement.php" method="post">
-<p>
-    <strong>Nom<span style="color: #ff0000;">*</span> :</strong> <label for="nom"> </label> <input id="nom" name="nom" size="10" type="text" /> 
-    <strong>Prénom :</strong> <label for="prenom"></label> <input id="prenom" name="prenom" size="10" type="text" /> <br>
-    <strong>Mail <span style="color: #ff0000;">*</span> : </strong><br /> <label for="mail"> </label><input id="mail" name="mail" size="20" type="text" />
-    <strong>Téléphone<span style="color: #ff0000;">*</span> :<label for="telephone"></label></strong> <input id="telephone" name="telephone" size="20" type="text" /> 
-</p>
-<p>Message <span style="color: #ff0000;">*</span> : <br>
-    <label for="message"></label> <textarea id="message" cols="52" rows="7" name="message"></textarea>
-</p>
-<p>
-<input type="submit" value="Envoyer" /> <input type="reset" value="Effacer" />
-</p>
-<p></p>
-</form>
+    <div class="FormCreateBottle">
+        <form class="InsertBottle" id="InsertBottle" action="../script/traitementForm.php" method="post">
+            
+            <h2>Formulaire de contact</h3>
+            <p>
+                Nom*: <br>
+                <label for="nom"> </label> <input id="nom" name="nom" size="30" type="text" /> 
+            </p>
+            <p>
+                Prénom : <br> 
+                <label for="prenom"></label> <input id="prenom" name="prenom" size="30" type="text" />
+            </p>
+            <p>
+                Mail* : <br> 
+                <label for="mail"> </label><input id="mail" name="mail" size="30" type="text" />
+            </p>
+            <p>
+                Téléphone* : <br>
+                <label for="telephone"></label> <input id="telephone" name="telephone" size="30" type="text" /> 
+            </p>
 
+            <p>
+                Message* : <br>
+                <label for="message"></label> <textarea id="message" cols="52" rows="7" name="message"></textarea>
+            </p>
+            <p>
+                <input type="submit" value="Envoyer" />
+            </p>
+        </form>
+    </div>
+</div>
 <div class="MapVenezNousVoir">
 
     <div class="map-responsive map">
