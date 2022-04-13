@@ -1,4 +1,31 @@
-<?php include 'includeContent/doctypeHead.php'; ?>
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Cave - Qui sommes-nous ?</title>
+        <meta name="description" content="My Cave, Cave à vin à Audenge. Venez découvrir l'histoire de notre sommelier Granier Joël et de son fils. Tout a commencé en 2013...">
+        <meta name=”robots” content="index, follow">
+        <link rel="icon" href="../img/Fav_Icon.png"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <title>My Cave</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HXL0YN1RMX"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HXL0YN1RMX');
+        </script>
+        <?php include "../script/Main.php"; ?>
+        <script src="../js/index.js" defer ></script>
+    </head>
 
 <body>
 

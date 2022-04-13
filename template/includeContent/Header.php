@@ -8,7 +8,7 @@
         <li><a href="accueil.php">Accueil</a></li>
         <li><a href="catalogue.php">Nos Vins</a></li>
         <li><a href="quiSommesNous.php">Qui sommes-nous ?</a></li>
-        <li><a href="modifCatalogue.php">Modifier le catalogue</a></li>
+        <!-- <li><a href="modifCatalogue.php">Modifier le catalogue</a></li> -->
         <li><a href="contact.php">Contact</a></li>
     </ul>
     </div>
@@ -19,7 +19,7 @@
             <li><a href="accueil.php">Accueil</a></li>
             <li><a href="catalogue.php">Nos Vins</a></li>
             <li><a href="quiSommesNous.php">Qui sommes-nous ?</a></li>
-            <li><a href="modifCatalogue.php">Modifier le catalogue</a></li>
+            <!-- <li><a href="modifCatalogue.php">Modifier le catalogue</a></li> -->
             <li><a href="contact.php">Contact</a></li>
         </ul>
     </div>

@@ -38,8 +38,18 @@
 
 @media screen and (max-width: 875px) {
   :root {
-    --GapPageRightLeft: 4%;
+    --GapPageRightLeft: 0%;
   }
+
+  .MenuBurger {
+    margin-right: 2%;
+  }
+
+  .ImgAccueilDiv img {
+    width: 250px;
+    height: auto;
+  }
+
   .contactadresseAccueil {
     flex-direction: column;
   }
@@ -70,18 +80,10 @@
     justify-content: center;
     align-items: center;
   }
-}
 
-@media screen and (max-width: 666px) {
-  :root {
-    --GapPageRightLeft: 0%;
-  }
-  .ImgAccueilDiv img {
-    width: 250px;
-    height: auto;
-  }
-  .MenuBurger {
-    margin-right: 5px;
+  .infosLégalesSection {
+    padding: 3% 5%;
+    text-align: justify;
   }
 }
 
@@ -209,7 +211,7 @@ h6 {
 }
 
 h1 {
-  font-size: 65px;
+  font-size: 60px;
   margin-top: 15px;
 }
 
@@ -547,6 +549,8 @@ header a {
   padding: 15px;
   border-radius: 20px;
   background-color: var(--lightSecond-color);
+  border: 1px solid black;
+  box-shadow: 0px 10px 60px 0px rgba(62, 0, 24, 0.349);
 }
 
 .DivCardImg {
@@ -743,8 +747,7 @@ textarea {
 }
 
 .catalogue {
-  margin-left: var(--GapPageRightLeft);
-  margin-right: var(--GapPageRightLeft);
+  margin: var(--GapPageRightLeft)
 }
 
 /********PAGE CONTACT**********/
@@ -793,6 +796,27 @@ textarea {
   width: 100%;
   position: absolute;
 }
+
+.formContact {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+
+}
+
+/********Page Informations légales*****/
+/* Informations légales */
+
+.infosLégalesSection {
+  margin-left: var(--GapPageRightLeft);
+  margin-right: var(--GapPageRightLeft);
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+
+
 
 /******footer*****/
 
@@ -874,3 +898,5 @@ footer {
   margin: 0;
   padding: 20px 0px;
 }
+
+

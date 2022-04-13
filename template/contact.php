@@ -1,4 +1,31 @@
-<?php include 'includeContent/doctypeHead.php'; ?>
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Cave - Contact</title>
+        <meta name="description" content="My Cave, Cave à vin à Audenge. Pour toute question ou demande de renseignements, n’hésitez pas à nous contacter par le biais de ces informations ou par le formulaire de contact.">
+        <meta name=”robots” content="index, follow">
+        <link rel="icon" href="../img/Fav_Icon.png"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <title>My Cave</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HXL0YN1RMX"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HXL0YN1RMX');
+        </script>
+        <?php include "../script/Main.php"; ?>
+        <script src="../js/index.js" defer ></script>
+    </head>
 
 <body>
 
@@ -35,6 +62,22 @@
 </div>
 
 <script type="text/javascript" src="https://form.jotform.com/jsform/212538130135344"></script>
+
+<form class="formContact" action="traitement.php" method="post">
+<p>
+    <strong>Nom<span style="color: #ff0000;">*</span> :</strong> <label for="nom"> </label> <input id="nom" name="nom" size="10" type="text" /> 
+    <strong>Prénom :</strong> <label for="prenom"></label> <input id="prenom" name="prenom" size="10" type="text" /> <br>
+    <strong>Mail <span style="color: #ff0000;">*</span> : </strong><br /> <label for="mail"> </label><input id="mail" name="mail" size="20" type="text" />
+    <strong>Téléphone<span style="color: #ff0000;">*</span> :<label for="telephone"></label></strong> <input id="telephone" name="telephone" size="20" type="text" /> 
+</p>
+<p>Message <span style="color: #ff0000;">*</span> : <br>
+    <label for="message"></label> <textarea id="message" cols="52" rows="7" name="message"></textarea>
+</p>
+<p>
+<input type="submit" value="Envoyer" /> <input type="reset" value="Effacer" />
+</p>
+<p></p>
+</form>
 
 <div class="MapVenezNousVoir">
 

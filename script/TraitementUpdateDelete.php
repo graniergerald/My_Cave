@@ -6,7 +6,7 @@ require "inputFileUpdate.php";
 if (isset($_POST['InputMAJ'])) {
 
 
-    if(isset($_POST['UpdateIdBottle']) && isset($_POST['UpdateNameBottle']) && isset($_POST['UpdateYearBottle']) && isset($_POST['UpdateGrapesBottle']) && isset($_POST['UpdateCountryBottle']) && isset($_POST['UpdateRegionBottle']) && isset($_POST['UpdateDescriptionBottle']) && isset($_FILES['UpdatePictureBottle']) && !empty($_POST['UpdateIdBottle']) && !empty($_POST['UpdateNameBottle']) && !empty($_POST['UpdateYearBottle']) && !empty($_POST['UpdateGrapesBottle']) && !empty($_POST['UpdateCountryBottle']) && !empty($_POST['UpdateRegionBottle']) && !empty($_POST['UpdateDescriptionBottle']) && !empty($_FILES['UpdatePictureBottle'])) {
+    if(isset($_POST['UpdateIdBottle']) && isset($_POST['UpdateNameBottle']) && isset($_POST['UpdateYearBottle']) && isset($_POST['UpdateGrapesBottle']) && isset($_POST['UpdateCountryBottle']) && isset($_POST['UpdateRegionBottle']) && isset($_POST['UpdateDescriptionBottle']) && isset($_FILES['UpdatePictureBottle']) && !empty($_POST['UpdateIdBottle']) && !empty($_POST['UpdateNameBottle']) && !empty($_POST['UpdateYearBottle']) && !empty($_POST['UpdateGrapesBottle']) && !empty($_POST['UpdateCountryBottle']) && !empty($_POST['UpdateRegionBottle']) && !empty($_POST['UpdateDescriptionBottle'])) {
 
 
             

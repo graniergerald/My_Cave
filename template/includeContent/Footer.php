@@ -41,10 +41,10 @@
             <a href="contact.php">Contactez nous</a>
         </div>
         <div class="thirdEncard">
-            <a href="#">Conditions Générales</br> d'utilisation</a>
+            <a href="infosLégales.php">Informations</br>légales</a>
         </div>
     </div>
     <div class="droitReserves">
-        <p><a href="https://www.linkedin.com/in/g%C3%A9rald-granier-554901194/?originalSubdomain=fr" target="_blank">Tous droits réservés 2021 Création originale Granier Gérald</a></p>
+        <p><a href="https://granier-gerald.fr/" target="_blank">Tous droits réservés 2021 Création originale GGWP</a></p>
     </div>
 </footer>
