@@ -23,7 +23,7 @@ $regex_head = '/[nr]/';
 /*Vérifie qu il n y est pas d erreur dans adresse mail*/
  if (!preg_match($regex_mail, $mail))
  {
- $alert = 'L'adresse '.$mail.' n'est pas valide';      
+ $alert = 'Cette adresse'.$mail.' est pas valide';      
  }
  else
 { 
@@ -90,10 +90,10 @@ $headers = 'From: MESSAGE DU SITE MyCave<granier.gerald01@gmail.com>'."rn";
 $headers .= "rn";
 /*L'envoi du mail - Et page de redirection*/
 mail($to, $sujet, $msg, $headers);
-header('Location:index.php');
+header('Location:https://mycave.granier-gerald.fr/template/accueil.php');
 }
 else
 {
-header('Location:index.php');
+header('Location:https://mycave.granier-gerald.fr/template/accueil.php');
 }
 ?>
